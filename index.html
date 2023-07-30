@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Personal Portfolio website-Easy Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+ <div id="header">
+            <div class="container">
+            <nav>
+                <img src="images/mypic.jpg" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                </nav>
+                <div class="header-text">
+                    <h1>Hi, I'm <span>Lavanya</span> <br> from India</h1>
+                    <h6>STUDENT BE CSE</h6>
+                </div>
+        </div>
+    </div>
+
+
+ <div id="about">
+    <div class ="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/b.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                </p>
+                <div class="tab-titles">
+                    <h1 class="tab-links active-link">Skills</h1>
+                    <h1 class="tab-links">Experience</h1>
+                    <h1 class="tab-links">Education</h1>
+                </div>
+                
+            </div> 
+        </div>
+    </div>
+</div>
+<!-----services--------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <div class="box">
+                <h2>Web Design</h2>
+                <a href="#">learn more</a>
+                <p class="center"></p>
+            </div>
+            </div>
+            <div>
+                <div class="box">
+                <h2>Web Design</h2>
+                <a href="#">learn more</a>
+                <p class="center"></p>
+            </div>
+            
+            </div>
+            <div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks=document.getElementByClassName("tab-links");
+    var tabcontents=document.getElementByClassName("tab-contents");
+    
+    function opentab(tabname){
+          for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementaryById(tabname).class
+    }
+</script>
+  
+</body>
+    
+</html>
